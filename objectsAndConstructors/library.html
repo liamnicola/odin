@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="hide()">ADD NEW BOOK</button>
+    <div id="form">
+        <form>
+            <h2>Add Book To Library</h2>
+            <input placeholder="enter title" name="title"/>
+            <input placeholder="enter author" name="author"/>
+            <input placeholder="enter number of pages" name="pages"/>
+            <label>Status</label>
+            <select name="status">
+                <option value="read">read</option>
+                <option value="unread">unread</option>
+            </select>
+            <button onclick="addBookToLibrary()">Submit</button>
+        </form>
+        
+    </div>
+    <div id="listBooks">
+    </div>
+
+
+    <script src="book.js"></script>
+</body>
+</html>

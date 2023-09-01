@@ -1,12 +1,36 @@
-function Book(title, author, pages, status){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
+const myLibrary = ["hi"];
 
-    this.info = function(){
-        console.log(title + " by " + author + pages + status)
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        //this.status = status;
     }
 }
 
-const book1 = new Book('Harry Potter 1', 'JK Rowling', 300, 'Read')
+function addBookToLibrary(){
+    let book = new Book(title, author, pages)
+    myLibrary.push(book)
+}
+
+function displayBooks(arr){
+    let books = "";
+    for(let i = 0; i < arr.length; i++){
+        books += `<li>${arr[i]}</li>`
+    }
+    return books;
+}
+
+document.getElementById("listBooks").innerHTML = `<ol>${displayBooks(myLibrary)}</ol>`
+
+function hide(){
+    var div = document.getElementById("form")
+    if(div.style.display === "none"){
+        div.style.display = "block"
+    } else {
+        div.style.display = "none"
+    }
+}
+
+new Book('Harry Potter 1', 'JK Rowling', 300, 'Read')
