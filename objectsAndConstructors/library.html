@@ -2,28 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="library.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <button onclick="hide()">ADD NEW BOOK</button>
-    <div id="form">
-        <form>
-            <h2>Add Book To Library</h2>
-            <input placeholder="enter title" type="text" id="title">
-            <input placeholder="enter author" type="text" id="author">
-            <input placeholder="enter number of pages" type="text" id="pages">
-            <label>Status</label>
-            <select id="status">
-                <option value="read">read</option>
-                <option value="unread">unread</option>
-            </select>
-            <button onclick="addBookToLibrary()">Submit</button>
-        </form>
-        
+    <div id="form-container">
+        <button id="book-form-button" onclick="hide()">Close</button>
+        <div id="form">
+            <form>
+                <h3>What book are you adding?</h3>
+                <label>Book Title</label>
+                <input class="form-input" type="text" placeholder="enter title" type="text" id="title" required>
+                <label>Book Author</label>
+                <input class="form-input" type="text" placeholder="enter author" type="text" id="author" required>
+                <label>Number of Pages</label>
+                <input class="form-input" type="number" placeholder="enter number of pages" type="text" id="pages" required>
+                <label>Completed</label>
+                <input type="checkbox" id="completed">
+                <input  type="submit" id="book-submit" onclick="addBookToLibrary()">
+            </form>
+            
+        </div>
     </div>
-    <div id="listBooks">
-        
+    <div class="library-container">
+    <table id="listBooks">
+        <tr>
+            <th class="title">Book Title</th>
+            <th class="author">Author</th>
+            <th>Pages</th>
+        </tr>
+    </table>
     </div>
 
 
