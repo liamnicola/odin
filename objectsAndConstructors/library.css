@@ -73,7 +73,7 @@ td {
 .bookRead{
     border: 4px solid;
     border-radius: 10%;
-    background-color: #84c987;
+    background-color: #32be2e;
 }
 
 .bookUnread{
@@ -113,4 +113,3 @@ button{
     cursor: pointer;
     border-radius: 10pt;
   }
-  
