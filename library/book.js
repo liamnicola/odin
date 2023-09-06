@@ -15,10 +15,15 @@ Book.prototype.toggleStatus = function(){
     this.completed = !this.completed;
 }
 
+document.getElementById("form").addEventListener("submit", addBookToLibrary);
 
-document.getElementById("book-submit").addEventListener("click", function(event){
+
+document.getElementById("form").addEventListener("submit", function(event){
+    addBookToLibrary
     event.preventDefault()
   });
+
+
 
 function addBookToLibrary(){
     let title = document.getElementById("title").value
