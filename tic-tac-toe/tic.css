@@ -1,0 +1,21 @@
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    gap: 5px;
+}
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    height: 100%;
+    width: 100%;
+    border: solid 1px;
+
+}
