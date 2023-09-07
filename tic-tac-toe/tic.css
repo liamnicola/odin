@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     height: 500px;
     width: 500px;
     margin: auto;
@@ -17,5 +15,7 @@
     height: 100%;
     width: 100%;
     border: solid 1px;
-
+    font-size: 100pt;
+    justify-content: center;
+    align-items: center;
 }
