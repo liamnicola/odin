@@ -1,6 +1,7 @@
 body {
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
 }
 
 #form-container{
@@ -17,7 +18,7 @@ body {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 16pt;
 }
 
 form {
@@ -32,6 +33,11 @@ form {
     width: 300px;
     background-color: #ffff;
     border: solid 1px black;
+    font-size: 14pt;
+}
+
+form label{
+    font-size: 14pt;
 }
 
 .form-input{
@@ -39,6 +45,7 @@ form {
     height: 20px;
     margin-bottom: 5%;
     margin-top: 5%;
+    font-size: 12pt;
 }
 
 
@@ -50,7 +57,7 @@ form {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14pt;
 }
 
 #listBooks{
@@ -94,7 +101,7 @@ button{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14pt;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10pt;
@@ -108,7 +115,7 @@ button{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14pt;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10pt;

@@ -51,7 +51,8 @@ const Game = (() => {
         gameOver = false;
         gameBoard.gameRender();
         let playerDiv = document.getElementById("player-name");
-        playerDiv.innerHTML = `player ${currentPlayer+1}'s Turn!`;
+        console.log(players)
+        playerDiv.innerHTML = `${players[0].name}'s Turn!`;
     }
 
     const playerClick = (event) => {
@@ -131,8 +132,10 @@ start.addEventListener("click", (event) => {
 const restartButton = document.getElementById("restart-button");
 restartButton.addEventListener("click", ()=>{
     gameBoard.restart()
-    document.getElementById("players").style.display = "block"
+    document.getElementById("player-name").innerHTML = ""
+    document.getElementById("players").style.display = "flex"
     restartButton.style.display = "none"
+    document.getElementById("gameboard").innerHTML = ""
 })
 
 //displayController

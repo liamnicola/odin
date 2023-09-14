@@ -7,18 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div id="player-name"></div>
-    <div id="gameboard" class="gameboard"></div>
-    <div id="players">
-        <input type="text" id="player1" placeholder="Name of Player One">
-        <input type="text" id="player2" placeholder="Name of Player Two">
-        <button id="start-button">Begin</button>
+    <div class="main-container">
+        <h1>Tic Tac Toe</h1>
+        <div id="player-name"></div>
+        <div id="players">
+            <input type="text" id="player1" placeholder="Name of Player One" value="Player 1">
+            <input type="text" id="player2" placeholder="Name of Player Two" value="Player 2">
+            <br>
+            <button id="start-button">Begin</button>
+        </div>
+        <button id="restart-button">Restart</button>
+        <div id="gameboard" class="gameboard"></div>
+        <div id="message"></div>
+        <div id="result"></div>
     </div>
-    <button id="restart-button">Restart</button>
-    <div id="message"></div>
-    <div id="result"></div>
-    
     <script src="tic.js"></script>
 </body>
 </html>
