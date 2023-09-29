@@ -75,7 +75,7 @@ const Game = (() => {
             gameBoard.update(id, players[currentPlayer].marker);
             if(checkWin(gameBoard.fetchGameboard(), players[currentPlayer].marker)){
                 gameOver = true;
-                playerDiv.innerHTML = ` ${players[currentPlayer].name} is the winner!`
+                playerDiv.innerHTML = ` ${players[currentPlayer - 1].name} is the winner!`
             } else if (checkDraw(gameBoard.fetchGameboard())){
                 gameOver = true;
             }
